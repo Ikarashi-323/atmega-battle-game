@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ソースコード</title>
+</head>
+<body>
+  <pre>
+#include <stdio.h>
+// ここに main_mcu1.c の中身を貼り付け
 #include<avr\io.h> 
 #include<util/delay.h> 
 #include<stdint.h> 
@@ -192,3 +202,7 @@ _delay_ms(300);
 } 
 return (0); 
 } 
+
+  </pre>
+</body>
+</html>
