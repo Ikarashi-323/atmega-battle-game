@@ -2,21 +2,7 @@
 
 ## 概要
 本プロジェクトは、ATmega328Pを用いて作成した2人対戦型ゲームです。C言語でゲーム制御を行い、直流モータ・LED・スイッチなどの電子部品を活用して、誰でも直感的に遊ぶことのできるゲームにすることを目標に制作しました。
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-</head>
-<body>
-  <ul>
-    <li><a href="assets/how_to_program.pdf">プログラム上の工夫・課題</a></li>
-    <li><a href="assets/presentation.pdf">発表スライド</a></li>
-    <li><a href="circuit/schematic.jpg">回路図</a></li>
-    <li><a href="assets/products.png">装置写真</a></li>
-  </ul>
-</body>
-</html>
+
 
 ## 使用部品
 | 部品 | 数量 |
