@@ -7,11 +7,8 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>DEN-DEN Battler</title>
 </head>
 <body>
-  <h1>DEN-DEN Battler</h1>
-  <p>ATmega328Pを用いて制作した2人対戦型ゲームです。</p>
   <ul>
     <li><a href="assets/how_to_program.pdf">プログラム上の工夫・課題</a></li>
     <li><a href="assets/presentation.pdf">発表スライド</a></li>
