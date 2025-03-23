@@ -2,7 +2,7 @@ atmega-battle-game/
 ├── code/
 │   └── main.c（ゲーム制御プログラム）
 ├── circuit/
-│   └── schematic.png（回路図の画像）
+│   └── schematic.jpg（回路図の画像）
 ├── assets/
 │   ├── photo.jpg（装置の写真）
 │   └── gameplay.gif（プレイ中の様子）
