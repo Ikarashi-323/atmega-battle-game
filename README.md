@@ -1,4 +1,4 @@
-# DEN-DEN-battler（大学課題）
+# DEN-DEN-battler（ATmega328pによる対戦型ゲーム）
 
 ## 概要
 本プロジェクトは、ATmega328Pを用いて作成した2人対戦型ゲームです。C言語でゲーム制御を行い、直流モータ・LED・スイッチなどの電子部品を活用して、誰でも直感的に遊ぶことのできるゲームにすることを目標に制作しました。
@@ -45,4 +45,17 @@ UP →	時計回りに回転、　Stay	→　回転しない、　Down	→　反
 ## 使用言語
 - C（Atmel Studio）
 
+## フォルダ構成
+atmega-battle-game/
+├── assets/
+│   ├── how_to_program.pdf (プラグラムする上で意識したこと・苦労したこと)
+│   ├── presentation.pdf (制作物発表時のスライド)
+│   └── products.png（装置の写真）
+├── circuit/
+│   └── schematic.jpg（回路図の画像）
+├── code/
+│   └── main.c（ゲーム制御プログラム）
+└──  README.md（プロジェクト説明）
+
+  
 
