@@ -8,11 +8,92 @@
 <body>
   <h1>DEN-DEN Battler</h1>
   <p>ATmega328Pを用いて制作した2人対戦型ゲームです。</p>
+  
   <ul>
     <li><a href="assets/how_to_program.pdf">プログラム上の工夫・課題</a></li>
     <li><a href="assets/presentation.pdf">発表スライド</a></li>
     <li><a href="circuit/schematic.jpg">回路図</a></li>
     <li><a href="assets/products.png">装置写真</a></li>
+  </ul>
+    <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #f9f9f9;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1em;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>概要</h2>
+  <p>
+    本プロジェクトは、ATmega328Pを用いて作成した2人対戦型ゲームです。<br>
+    C言語でゲーム制御を行い、直流モータ・LED・スイッチなどの電子部品を活用して、<br>
+    誰でも直感的に遊ぶことのできるゲームにすることを目標に制作しました。
+  </p>
+
+  <h2>使用部品</h2>
+  <table>
+    <thead>
+      <tr><th>部品</th><th>数量</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>ATmega328P</td><td>2個</td></tr>
+      <tr><td>モータードライバ（L298NDC）</td><td>1個</td></tr>
+      <tr><td>直流モーター（FE130AV-2270-38-R）</td><td>2個</td></tr>
+      <tr><td>LED（青・赤）</td><td>各3個</td></tr>
+      <tr><td>抵抗（330Ω / 50Ω）</td><td>各6個</td></tr>
+      <tr><td>タクトスイッチ</td><td>6個</td></tr>
+      <tr><td>単三電池</td><td>4本</td></tr>
+      <tr><td>ブレッドボード、ジャンパー線、ワニ口クリップ</td><td>各種</td></tr>
+    </tbody>
+  </table>
+
+  <h3>デザイン素材</h3>
+  <ul>
+    <li>マスキングテープ（赤・青）</li>
+    <li>色画用紙（赤・青）</li>
+    <li>折り紙（黒）</li>
+    <li>発泡スチロール</li>
+    <li>菓子箱・ダンボール・マグネット</li>
+  </ul>
+
+  <h2>ゲームルール</h2>
+  <ul>
+    <li>各プレイヤーにはヘリコプターと3つのHP-LED、そして UP, Stay, Down の3つのボタンがあります。</li>
+    <li>攻撃と守備に分かれ、まず攻撃側がボタンを選択します。</li>
+    <li>ボタンに応じてプロペラの動作が変化：<br>
+      UP → 時計回り、Stay → 回転なし、Down → 反時計回り
+    </li>
+    <li>守備側はプロペラの動作を見て3秒以内に同じボタンを押します。</li>
+    <li>一致 → 防御成功（LED減らない）、不一致 → 防御失敗（LED1つ減る）</li>
+    <li>判定後に攻守交代、先に相手のLEDを全て消した方が勝利！</li>
+  </ul>
+
+  <h2>💻 使用言語・開発環境</h2>
+  <ul>
+    <li>C（Atmel Studio）</li>
   </ul>
 </body>
 </html>
